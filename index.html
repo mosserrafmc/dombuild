@@ -1,19 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
-</head>
-<body>
-    <header>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+<style>
+    .inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
+</style>
+</head>
+
+<body class="font-[inter]">
+    <header class="bg-lime-500">
+        <div class="max-w-[90%] mx-auto py-7 flex justify-between">
+
+            <div class="flex justify-center items-center">
+                <button class="btn bg-lime-300 text-cyan-600">Blog</button>
+            </div>
+            <div class="flex justify-center align-middle gap-2 ">
+                <img class="max-w-[40%] max-h-[75%]" src="assets/logo.png" alt="">
+                <h3 class="w-fit mx-auto self-end font-inter text-white size-10 font-semibold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex justify-center items-center gap-1">
+                <img class="max-w-[30%] max-h-[40%]" src="assets/coin.png" alt="">
+                <p class="text-cyan-600 font-bold"><span class="font-bold text-cyan-600">100000</span> BDT</p>
+            </div>
+        </div>
+        <div class="flex justify-center py-7 gap-3 bg-lime-200">
+            <button class="btn">Donation</button>
+            <button class="btn">History</button>
+        </div>
     </header>
 
-    <main>
-        
+    <main class="max-w-[100%] px-3 lg:px-0 lg:max-w-[75%] mx-auto justify-center py-10">
+        <!-- Card Section -->
+        <section>
+            <div class="card lg:card-side  bg-base-100 shadow-xl">
+                <figure>
+                    <img src="assets/feni.png" alt="" />
+                </figure>
+                <div class="card-body max-w-[100%] lg:max-w-[50%]">
+                    <div class="flex justify-start p-5 bg-gray-200 max-w-[40%]">
+                        <img class="max-w-[30%] max-h-[40%]" src="assets/coin.png" alt="">
+                        <p class="text-cyan-600 text-sm w-fit"><span class="text-cyan-600">200000</span> BDT</p>
+                    </div>
+                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.</p>
+                    <input class=" py-3 border-2 rounded-md pl-3" type="text" placeholder="Please type your amount">
+                    <button class="btn btn-primary">Donate</button>
+                </div>
+            </div>
+            <div class="card lg:card-side bg-base-100 shadow-xl my-10">
+                <figure>
+                  <img
+                    src="assets/noakhali.png"
+                    alt="" />
+                </figure>
+                <div class="card-body max-w-[100%] lg:max-w-[50%]">
+                  <h2 class="card-title">New movie is released!</h2>
+                  <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                    donation will help provide essential supplies and to those affected by this disaster. Every
+                    contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                    and making a positive impact on the lives of those in need.</p>
+                    <input class=" py-3 border-2 rounded-md pl-3" type="text" placeholder="Please type your amount">
+                    <button class="btn btn-primary">Donate</button>
+                </div>
+              </div>
+            <div class="card my-10 lg:card-side bg-base-100 shadow-xl">
+                <figure>
+                    <img src="assets/quota-protest.png" alt="" />
+                </figure>
+                <div class="card-body max-w-[100%] lg:max-w-[50%]">
+                    <h2 class="card-title">New movie is released!</h2>
+                    <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                      donation will help provide essential supplies and to those affected by this disaster. Every
+                      contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                      and making a positive impact on the lives of those in need.</p>
+                      <input class=" py-3 border-2 rounded-md pl-3" type="text" placeholder="Please type your amount">
+                      <button class="btn btn-primary">Donate</button>
+                  </div>
+            </div>
+
+        </section>
+        <!-- history sections -->
+        <section>
+
+        </section>
     </main>
 
 
 </body>
+
 </html>
