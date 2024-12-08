@@ -82,7 +82,7 @@ document.getElementById('add-donation-f')
             p.innerText = `
             Donated ${addFunds} BDT for Flood at Feni.
             
-            ${now} 
+            At ${now} 
             `
             document.getElementById('transactionHistory').appendChild(p);
 
@@ -118,7 +118,7 @@ document.getElementById('add-donation-q')
             p.innerText = `
             Donated ${addFunds} BDT for Quota Movement.
             
-            ${now} 
+            At ${now} 
             `
             document.getElementById('transactionHistory').appendChild(p);
 
