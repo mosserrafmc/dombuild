@@ -27,15 +27,16 @@ document.getElementById('add-donation-n')
         const addingFunds = document.getElementById('adding-funds').innerText;        
         const convertFundAmount = parseFloat(addingFunds); 
         const add = addFunds + convertFundAmount;
-        document.getElementById('adding-funds').innerText = add;
+        
 
         const deductFunds = document.getElementById('deduct-funds').innerText;
         const convertFundsatTop = parseFloat(deductFunds);
         console.log(convertFundsatTop);
         
-        const deduct = convertFundsatTop - convertFundAmount;
+        const deduct = convertFundsatTop - addFunds;
 
         
         document.getElementById('deduct-funds').innerText = deduct;
+        document.getElementById('adding-funds').innerText = add;
 
     })
