@@ -2,8 +2,8 @@ const donationBtn = document.getElementById('donation-button');
 const historyBtn = document.getElementById('history-button');
 
 donationBtn.addEventListener('click', function () {
-    document.getElementById('history-sec').setAttribute('class', 'hidden');
-    document.getElementById('cards').setAttribute('class', 'hidden');
+    showTabs('cards');
+    // document.getElementById('cards').removeAttribute('class', 'hidden');    
     donationBtn.style.color = 'white';
     donationBtn.style.backgroundColor = 'green';
     historyBtn.style.color = 'black';
@@ -13,7 +13,8 @@ donationBtn.addEventListener('click', function () {
 })
 
 historyBtn.addEventListener('click', function () {
-    document.getElementById('cards').setAttribute('class', 'hidden');
+    showTabs('history-sec');
+    // document.getElementById('history-sec').removeAttribute('class', 'hidden');
     historyBtn.style.color = 'white';
     historyBtn.style.backgroundColor = 'green';
     donationBtn.style.color = 'black';
@@ -23,20 +24,27 @@ historyBtn.addEventListener('click', function () {
 
 document.getElementById('add-donation-n')
     .addEventListener('click', function () {
-        const addFunds = addDonationfund('givenAmount');        
-        const addingFunds = document.getElementById('adding-funds').innerText;        
-        const convertFundAmount = parseFloat(addingFunds); 
-        const add = addFunds + convertFundAmount;
-        
+        const addFunds = addDonationfund('givenAmount');
+        if (addFunds > 0) {
+            
+            const addingFunds = document.getElementById('adding-funds').innerText;
+            const convertFundAmount = parseFloat(addingFunds);
+            const add = addFunds + convertFundAmount;
 
-        const deductFunds = document.getElementById('deduct-funds').innerText;
-        const convertFundsatTop = parseFloat(deductFunds);
-        console.log(convertFundsatTop);
-        
-        const deduct = convertFundsatTop - addFunds;
+            const deductFunds = document.getElementById('deduct-funds').innerText;
+            const convertFundsatTop = parseFloat(deductFunds);
+            const deduct = convertFundsatTop - addFunds;
 
-        
-        document.getElementById('deduct-funds').innerText = deduct;
-        document.getElementById('adding-funds').innerText = add;
+
+            document.getElementById('deduct-funds').innerText = deduct;
+            document.getElementById('adding-funds').innerText = add;
+
+            document.getElementById('givenAmount').value = '';
+            
+
+        }
+        else {
+            alert('Please input a valid Amount');
+        }
 
     })
