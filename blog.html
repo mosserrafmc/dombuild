@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Donation</title>
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet">
-        <style>
-            .inter {
-                font-family: "Inter", serif;
-                font-optical-sizing: auto;
-                font-weight: 400;
-                font-style: normal;
-            }
-        </style>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .inter {
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
 <body>
     <header class="bg-lime-500 sticky top-0 z-[1]">
         <div class="max-w-[90%] mx-auto py-7 flex justify-between">
@@ -37,8 +39,52 @@
                         class="font-bold text-cyan-600">1000000</span> BDT</p>
             </div>
         </div>
-        
+
     </header>
-    
+
+    <main class="max-w-[95%] lg:max-w-[70%] mx-auto my-10 items-center">
+        <div>
+            <h1 class="my-10 text-4xl font-bold">Frequently Asked Questions</h1>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the HTML DOM?</div>
+            <div class="collapse-content">
+                <p>The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+                    The HTML elements as objects
+                    The properties of all HTML elements
+                    The methods to access all HTML elements
+                    The events for all HTML elements</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How to Finding HTML Elements by Class Name?</div>
+            <div class="collapse-content">
+                <p>If you want to find all HTML elements with the same class name, use getElementsByClassName().
+
+                    This example returns a list of all elements with class="intro".</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How to Event Bubbling or Event Capturing?</div>
+            <div class="collapse-content">
+                <p>There are two ways of event propagation in the HTML DOM, bubbling and capturing.
+                    Event propagation is a way of defining the element order when an event occurs. If you have a
+                    p element inside a div element, and the user clicks on the p element, which element's "click" event
+                    should be handled first?
+
+                    In bubbling the inner most element's event is handled first and then the outer: the
+                    p element's click event is handled first, then the div element's click event.
+
+                    In capturing the outer most element's event is handled first and then the inner: the div
+                    element's click event will be handled first, then the p element's click event.</p>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>

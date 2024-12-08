@@ -114,7 +114,7 @@ document.getElementById('add-donation-q')
             document.getElementById('givenAmount-3').value = '';
 
             const p = document.createElement('p');
-            const now = new Date();
+            const now = new Date();            
             p.innerText = `
             Donated ${addFunds} BDT for Quota Movement.
             
