@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <main class="max-w-[100%] px-3 lg:px-0 lg:max-w-[75%] mx-auto justify-center py-10">
+    <main class="max-w-[100%] px-3 lg:px-0 lg:max-w-[85%] mx-auto justify-center py-10">
         <!-- Card Section -->
         <section id="cards" class="">
             <div class="card lg:card-side  bg-base-100 shadow-xl">
@@ -66,7 +66,7 @@
                     <input id="givenAmount" class=" py-3 border-2 rounded-md pl-3" type="text"
                         placeholder="Please type your amount">
                     <a href="#my_modal_8" id="add-donation-n" class="btn btn-primary">Donate Now</a>
-                    
+
                 </div>
             </div>
             <div class="card lg:card-side my-10 bg-base-100 shadow-xl">
@@ -76,7 +76,8 @@
                 <div class="card-body max-w-[100%] lg:max-w-[50%]">
                     <div class="flex justify-start items-center p-3 bg-gray-200 max-w-[65%] lg:max-w-[30%] rounded-md">
                         <img class="" src="assets/coin.png" alt="">
-                        <p class="text-cyan-600 text-sm w-fit"><span class="text-cyan-600">300</span> BDT</p>
+                        <p class="text-cyan-600 text-sm w-fit"><span id="feni-adding-fund"
+                                class="text-cyan-600">300</span> BDT</p>
                     </div>
                     <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p> The recent floods in Feni have devastated local communities, leading to severe disruption and
@@ -86,7 +87,8 @@
                         real difference. Please consider donating today to assist those in urgent need.</p>
                     <input id="givenAmount-2" class=" py-3 border-2 rounded-md pl-3" type="text"
                         placeholder="Please type your amount">
-                    <button id="add-donation-f" class="btn btn-primary">Donate Now</button>
+                    <a href="#fmy_modal_8" id="add-donation-f" class="btn btn-primary">Donate Now</a>
+
                 </div>
             </div>
             <div class="card lg:card-side  bg-base-100 shadow-xl">
@@ -96,7 +98,7 @@
                 <div class="card-body max-w-[100%] lg:max-w-[50%]">
                     <div class="flex justify-start items-center p-3 bg-gray-200 max-w-[65%] lg:max-w-[30%] rounded-md">
                         <img class="" src="assets/coin.png" alt="">
-                        <p class="text-cyan-600 text-sm w-fit"><span class="text-cyan-600">450</span> BDT</p>
+                        <p class="text-cyan-600 text-sm w-fit"><span id="quata-adding-funds" class="text-cyan-600">450</span> BDT</p>
                     </div>
                     <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                     <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many
@@ -107,20 +109,7 @@
                         donation to support these brave individuals in their time of need.</p>
                     <input id="givenAmount-3" class=" py-3 border-2 rounded-md pl-3" type="text"
                         placeholder="Please type your amount">
-                    <button id="add-donation-q" class="btn btn-primary" onclick="my_modal_5.showModal()">Donate
-                        Now</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <div class="modal-box">
-                            <h3 class="text-lg font-bold">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
-                                <form method="dialog">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                </form>
-                            </div>
-                        </div>
-                    </dialog>
+                    <a href="#qmy_modal_8" id="add-donation-q" class="btn btn-primary">Donate Now</a>
                     <!-- <button id="add-donation-q" class="btn btn-primary">Donate Now</button> -->
                 </div>
             </div>
@@ -128,7 +117,7 @@
 
         </section>
         <!-- history sections -->
-        <section id="history-sec" class="max-w-[95%] lg:,ax-w-[75%]">
+        <section id="history-sec" class="hidden max-w-[95%] lg:,ax-w-[75%]">
             <div>
                 <ul class="m-3 border-2 rounded-md">
                     <li>This is an example</li>
@@ -142,16 +131,39 @@
 
     <div class="modal" role="dialog" id="my_modal_8">
         <div class="modal-box justify-center text-center">
-          <h3 class="text-4xl font-bold">Congrats!</h3>
-          <img class="inline my-3" src="assets/coin.png" alt="">
-          <p class="py-4">You have donated for Noakhali</p>
-          
-          <div class="modal-action justify-center">
-            <a href="#" class="btn">Close Confirmation</a>
-          </div>
-        </div>
-      </div>
+            <h3 class="text-4xl font-bold">Congrats!</h3>
+            <img class="inline my-3" src="assets/coin.png" alt="">
+            <p class="py-4">Donate for Flood Relief in Noakhali, Bangladesh</p>
 
+            <div class="modal-action justify-center">
+                <a href="#" class="btn">Close Confirmation</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" role="dialog" id="fmy_modal_8">
+        <div class="modal-box justify-center text-center">
+            <h3 class="text-4xl font-bold">Congrats!</h3>
+            <img class="inline my-3" src="assets/coin.png" alt="">
+            <p class="py-4">Donate for Flood Relief in Feni,Bangladesh</p>
+
+            <div class="modal-action justify-center">
+                <a href="#" class="btn">Close Confirmation</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" role="dialog" id="qmy_modal_8">
+        <div class="modal-box justify-center text-center">
+            <h3 class="text-4xl font-bold">Congrats!</h3>
+            <img class="inline my-3" src="assets/coin.png" alt="">
+            <p class="py-4">Aid for Injured in the Quota Movement Added.</p>
+
+            <div class="modal-action justify-center">
+                <a href="#" class="btn">Close Confirmation</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

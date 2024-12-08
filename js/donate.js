@@ -48,3 +48,57 @@ document.getElementById('add-donation-n')
         }
 
     })
+
+    document.getElementById('add-donation-f')
+    .addEventListener('click', function () {
+        const addFunds = addDonationfund('givenAmount-2');
+        if (addFunds > 0) {
+            
+            const addingFunds = document.getElementById('feni-adding-fund').innerText;
+            const convertFundAmount = parseFloat(addingFunds);
+            const add = addFunds + convertFundAmount;
+
+            const deductFunds = document.getElementById('deduct-funds').innerText;
+            const convertFundsatTop = parseFloat(deductFunds);
+            const deduct = convertFundsatTop - addFunds;
+
+
+            document.getElementById('deduct-funds').innerText = deduct;
+            document.getElementById('feni-adding-fund').innerText = add;
+
+            document.getElementById('givenAmount-2').value = '';
+            
+
+        }
+        else {
+            alert('Please input a valid Amount');
+        }
+
+    })
+
+    document.getElementById('add-donation-q')
+    .addEventListener('click', function () {
+        const addFunds = addDonationfund('givenAmount-3');
+        if (addFunds > 0) {
+            
+            const addingFunds = document.getElementById('quata-adding-funds').innerText;
+            const convertFundAmount = parseFloat(addingFunds);
+            const add = addFunds + convertFundAmount;
+
+            const deductFunds = document.getElementById('deduct-funds').innerText;
+            const convertFundsatTop = parseFloat(deductFunds);
+            const deduct = convertFundsatTop - addFunds;
+
+
+            document.getElementById('deduct-funds').innerText = deduct;
+            document.getElementById('quata-adding-funds').innerText = add;
+
+            document.getElementById('givenAmount-3').value = '';
+            
+
+        }
+        else {
+            alert('Please input a valid Amount');
+        }
+
+    })
